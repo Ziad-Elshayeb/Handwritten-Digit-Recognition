@@ -3,6 +3,9 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image, ImageOps
 
+# Disable GPU if you want to avoid GPU issues
+tf.config.set_visible_devices([], 'GPU')
+
 # Load your trained model
 model = tf.keras.models.load_model('model.h5')
 
