@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Load your trained model
-model = tf.keras.models.load_model('handwritten_digit_recognition_model.h5')
+model = tf.keras.models.load_model('model.h5')
 test = pd.read_csv('test.csv')
 
 # Function to preprocess the image
