@@ -2,8 +2,6 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 from PIL import Image, ImageOps
-import matplotlib.pyplot as plt
-import pandas as pd
 
 # Load your trained model
 model = tf.keras.models.load_model('model.h5')
